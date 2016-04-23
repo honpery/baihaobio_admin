@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="admin">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <base href="/"></base>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body ng-controller="AdminController">
+    <div class="container-fluid">
+        <header class="row" id="header">header</header>
+        <div class="row section">
+            <aside class="sidebar col-md-2">
+                <nav>
+                    <ul class="list-unstyled">
+                        <li><a href="/">首页</a></li>
+                        <li><a href="/service">服务</a></li>
+                        <li><a href="/employee">职员</a></li>
+                        <li><a href="/activity">活动</a></li>
+                        <li><a href="/news">新闻</a></li>
+                        <li><a href="/jobs">招聘</a></li>
+                        <li><a href="/pics">图片</a></li>
+                        <li><a href="/info">公司</a></li>
+                        <li><a href="/setting">设置</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <main id="main" ng-view class="col-md-10"></main>
+        </div>
+    </div>
+    <script src="//cdn.bootcss.com/angular.js/1.5.0/angular.min.js"></script>
+    <script src="//cdn.bootcss.com/angular.js/1.5.0/angular-route.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>

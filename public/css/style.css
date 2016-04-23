@@ -1,0 +1,21 @@
+html, body, .container-fluid {
+	height: 100%;
+}
+
+#header {
+	height: 70px;
+	position: fixed;
+	background: #eee;
+	width: 100%;
+}
+
+.container-fluid > .section {
+	height: 100%;
+	width: 100%;
+	padding-top: 70px;
+}
+
+.sidebar {
+	height: 100%;
+	background: #aaa;
+}
