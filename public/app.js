@@ -8,7 +8,7 @@ var app = angular.module('admin', ['ngRoute'])
             })
             .when('/service', {
                 templateUrl: './service/service.tpl.html',
-                controller: 'SerciceController'
+                controller: 'ServiceController'
             })
             .when('/employee', {
             	templateUrl: './employee/employee.tpl.html',
@@ -29,6 +29,10 @@ var app = angular.module('admin', ['ngRoute'])
             .when('/pics', {
             	templateUrl: './pics/pics.tpl.html',
             	controler: 'PicsController'
+            })
+            .when('/info', {
+                templateUrl: './info/info.tpl.html',
+                controler: 'InfoController'
             })
             .when('/setting', {
             	templateUrl: './setting/setting.tpl.html',
@@ -67,6 +71,9 @@ var app = angular.module('admin', ['ngRoute'])
 	.controller('PicsController', ['$scope', function($scope){
 		
 	}])
+    .controller('InfoController', ['$scope', function($scope){
+        
+    }])
 	.controller('SettingController', ['$scope', function($scope){
 		
 	}])
